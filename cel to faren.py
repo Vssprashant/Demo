@@ -1,4 +1,4 @@
-celsius_1 = float(input("Temperature value in degree Celsius: " ))  
+celsius_1 = 43
  
 Fahrenheit_1 = (celsius_1 * 1.8) + 32  
     
