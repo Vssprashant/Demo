@@ -1,14 +1,6 @@
-# syntax=docker/dockerfile:1
+FROM ubuntu
+MAINTAINER prashant vss <vss.prashant302@gmail.com>
 
-FROM node:12.18.1
-ENV NODE_ENV=production
+RUN apt-get update
 
-WORKDIR /app
-
-COPY ["package.json", "package-lock.json*", "./"]
-
-RUN npm install --production
-
-COPY . .
-
-CMD [ "node", "server.js" ]
+CMD["echo", "My first docker image"]
